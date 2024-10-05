@@ -26,7 +26,7 @@ A Function for filtering reads by specified parameters. The function takes 4 arg
 * **quality_threshold** - average read quality threshold for filtering, default is 0 (phred33 scale).
 
 #### Examples
-For EXAMPLE_FASTQ from example_data.py:
+For [EXAMPLE_FASTQ](https://github.com/dashvash/bioinf_modules/blob/tools/example_data.py#:~:text=bioinf_modules.py-,example_data,-.py)
 
         filter_fastq(EXAMPLE_FASTQ, length_bounds=(50, 75)) -> {'@SRX079811': ('AGTTATTTATGCATCATTCTCATGTATGAGCCAACAAGATAGTACAAGTTTTATTGCTATGAGTTCAGTACAACA', 
         '<<<=;@B??@<>@><48876EADEG6B<A@*;398@.=BB<7:>.BB@.?+98204<:<>@?A=@EFEFFFEEFB'), 
