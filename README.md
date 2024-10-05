@@ -5,7 +5,7 @@ A two-function module for working with nucleic acid sequences.
 ### run_dna_rna_tools
 The function takes any number of arguments with DNA or RNA sequences (str) as input, as well as the name of the operation to be executed as the last argument. After that, it performs the specified action on all the passed sequences and returns the result.
 
-#### Availiable oparetions
+#### Availiable oparations
 * **transcribe** — return transcribed sequence
 * **reverse** — return reversed sequence
 * **complement** — return complement sequence
