@@ -4,9 +4,10 @@ run_dna_rna_tools and filter_fastq described below
 
 from add_modules import rna_dna as rd
 from add_modules import fastq as fq
+from typing import Union, Iterable
 
 
-def run_dna_rna_tools(*args):
+def run_dna_rna_tools(*args: Iterable[str]) -> Union[str, list[str]]:
     """ Function to apply diffrent operations to DNA/RNA string
     Args:
         *args: variable length arguments (str) - DNA/RNA sequences
@@ -36,9 +37,9 @@ def run_dna_rna_tools(*args):
         return result
 
 
-def filter_fastq(seqs, gc_bounds=(0, 100),
+def filter_fastq(seqs: dict, gc_bounds=(0, 100),
                  length_bounds=(0, 2**32),
-                 quality_threshold=0):
+                 quality_threshold=0) -> dict:
     """ Function to filter sequences by the given parameter's values
     Args:
         seqs (dict): dictionary containing sequences

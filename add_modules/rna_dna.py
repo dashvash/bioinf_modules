@@ -1,9 +1,9 @@
-def is_dna(string: str):
+def is_dna(string: str) -> str:
     dna = {'a', 't', 'c', 'g'}
     return set(string.lower()).issubset(dna)
 
 
-def is_rna(string: str):
+def is_rna(string: str) -> str:
     rna = {'a', 'u', 'c', 'g'}
     return set(string.lower()).issubset(rna)
 
@@ -33,14 +33,14 @@ dna_transcribe = {'A': 'A',
                   'g': 'g'}
 
 
-def reverse(string: str):
+def reverse(string: str) -> str:
     if is_dna(string) or is_rna(string):
         return string[::-1]
     else:
         return 'is_not_NA'
 
 
-def complement(string: str):
+def complement(string: str) -> str:
     comp = ''
     if is_dna(string):
         for i in string:
@@ -53,11 +53,11 @@ def complement(string: str):
     return comp
 
 
-def reverse_complement(string: str):
+def reverse_complement(string: str) -> str:
     return complement(reverse(string))
 
 
-def transcribe(string: str):
+def transcribe(string: str) -> str:
     transcript = ''
     if is_dna(string):
         for i in string:
