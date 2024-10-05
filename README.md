@@ -32,3 +32,14 @@ For [EXAMPLE_FASTQ](https://github.com/dashvash/bioinf_modules/blob/tools/exampl
         '<<<=;@B??@<>@><48876EADEG6B<A@*;398@.=BB<7:>.BB@.?+98204<:<>@?A=@EFEFFFEEFB'), 
         '@SRX079812': ('AGTGAGACACCCCTGAACATTCCTAGTAAGACATCTTTGAATATTACTAGTTAGCCACACTTTAAAATGACCCG',
         '<98;<@@@:@CD@BCCDD=DBBCEBBAAA@9???@BCDBCGF=GEGDFGDBEEEEEFFFF=EDEE=DCD@@BBC')}
+#### Installation
+To run the script you need to clone the repository:
+
+        git clone git@github.com:dashvash/bioinf_modules.git
+
+#### Info
+You can get the additional information regarding DNA/RNA operations and FASTQ format below:
+* [**Transcription**](https://en.wikipedia.org/wiki/Transcription_(biology))
+* [**Translation**](https://en.wikipedia.org/wiki/Translation_(biology))
+* [**Complementarity**](https://en.wikipedia.org/wiki/Complementarity_(molecular_biology))
+* [**FASTQ**](https://en.wikipedia.org/wiki/FASTQ_format)
