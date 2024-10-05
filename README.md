@@ -1,17 +1,17 @@
 # bioinf_modules
-Модуль с двумя функциями для работы с последовательностями нуклеиновых кислот. 
+A two-function module for working with nucleic acid sequences.
 
-## Описание функций
+## Description
 ### run_dna_rna_tools
-Функция принимает на вход произвольное количество аргументов с последовательностями ДНК или РНК (str), а также название процедуры которую нужно выполнить последним агрументом. После этого она делает заданное действие над всеми переданными последовательностями и возвращает результат.
+The function takes any number of arguments with DNA or RNA sequences (str) as input, as well as the name of the operation to be executed as the last argument. After that, it performs the specified action on all the passed sequences and returns the result.
 
-#### Доступные процедуры
-* **transcribe** — вернуть транскрибированную последовательность
-* **reverse** — вернуть развёрнутую последовательность
-* **complement** — вернуть комплементарную последовательность
-* **reverse_complement** — вернуть обратную комплементарную последовательность
+#### Availiable oparetions
+* **transcribe** — return transcribed sequence
+* **reverse** — return reversed sequence
+* **complement** — return complement sequence
+* **reverse_complement** — return reversed-complement sequence
 
-#### Пример использования
+#### Examples
     run_dna_rna_tools('ATG', 'transcribe') -> 'AUG'
     run_dna_rna_tools('ATG', 'reverse') -> 'GTA'
     run_dna_rna_tools('AtG', 'complement') -> 'TaC'
