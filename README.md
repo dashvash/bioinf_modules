@@ -25,4 +25,10 @@ A Function for filtering reads by specified parameters. The function takes 4 arg
 * **length_bounds** - length interval for filtering, (default is (0, 2**32)). If one numper is in input, it is set as an upper limit.
 * **quality_threshold** - average read quality threshold for filtering, default is 0 (phred33 scale).
 
+#### Examples
+For EXAMPLE_FASTQ from example_data.py:
 
+        filter_fastq(EXAMPLE_FASTQ, length_bounds=(50, 75)) -> {'@SRX079811': ('AGTTATTTATGCATCATTCTCATGTATGAGCCAACAAGATAGTACAAGTTTTATTGCTATGAGTTCAGTACAACA', 
+        '<<<=;@B??@<>@><48876EADEG6B<A@*;398@.=BB<7:>.BB@.?+98204<:<>@?A=@EFEFFFEEFB'), 
+        '@SRX079812': ('AGTGAGACACCCCTGAACATTCCTAGTAAGACATCTTTGAATATTACTAGTTAGCCACACTTTAAAATGACCCG',
+        '<98;<@@@:@CD@BCCDD=DBBCEBBAAA@9???@BCDBCGF=GEGDFGDBEEEEEFFFF=EDEE=DCD@@BBC')}
