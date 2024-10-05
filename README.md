@@ -19,6 +19,10 @@ The function takes any number of arguments with DNA or RNA sequences (str) as in
     run_dna_rna_tools('ATG', 'aT', 'reverse') -> ['GTA', 'Ta']
 
 ### filter_fastq
-
+A Function for filtering reads by specified parameters. The function takes 4 arguments as input: seqs, gc_bounds, length_bounds, quality_threshold:
+* **seqs** - a dictionary consisting of fastq sequences.Key is a string, the name of the sequence. Value is a tuple of two strings: sequence and quality.
+* **gc_bounds** - GC % interval for filtering (default is (0, 100). If one numper is in input, it is set as an upper limit.
+* **length_bounds** - length interval for filtering, (default is (0, 2**32)). If one numper is in input, it is set as an upper limit.
+* **quality_threshold** - average read quality threshold for filtering, default is 0 (phred33 scale).
 
 
