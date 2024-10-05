@@ -43,3 +43,6 @@ You can get the additional information regarding DNA/RNA operations and FASTQ fo
 * [**Translation**](https://en.wikipedia.org/wiki/Translation_(biology))
 * [**Complementarity**](https://en.wikipedia.org/wiki/Complementarity_(molecular_biology))
 * [**FASTQ**](https://en.wikipedia.org/wiki/FASTQ_format)
+
+#### Contact
+This is [Bioinformatics Institute](https://bioinf.me/) study projects by [Daria Vashunina](https://t.me/darivash)
