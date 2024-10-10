@@ -62,8 +62,8 @@ def filter_fastq(seqs: dict, gc_bounds=(0, 100),
         dna = seqs[name][0]
         qual = seqs[name][1]
         gb = gc_bounds
-        if (length_bounds[0] <= len(dna) <= length_bounds[1]:
-            and gb[0] <= fq.count_gc(dna) <= gb[1]:
+        if (length_bounds[0] <= len(dna) <= length_bounds[1]
+            and gb[0] <= fq.count_gc(dna) <= gb[1]
             and fq.quality_threshold(qual) > quality_threshold
             ):
             filter_result[name] = (dna, qual)
