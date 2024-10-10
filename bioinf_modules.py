@@ -2,9 +2,9 @@
 run_dna_rna_tools and filter_fastq described below
 """
 
+from typing import Union, Iterable
 from add_modules import rna_dna as rd
 from add_modules import fastq as fq
-from typing import Union, Iterable
 
 
 def run_dna_rna_tools(*args: Iterable[str]) -> Union[str, list[str]]:
@@ -19,16 +19,17 @@ def run_dna_rna_tools(*args: Iterable[str]) -> Union[str, list[str]]:
             list: a list containing DNA/RNA (str) after the applied operation
     """
     result = []
-    if args[-1] == 'reverse':
+    operation = args[-1]
+    if operation == 'reverse':
         for i in args[:-1]:
             result.append(rd.reverse(i))
-    if args[-1] == 'complement':
+    if operation == 'complement':
         for i in args[:-1]:
             result.append(rd.complement(i))
-    if args[-1] == 'reverse_complement':
+    if operation == 'reverse_complement':
         for i in args[:-1]:
             result.append(rd.reverse_complement(i))
-    if args[-1] == 'transcribe':
+    if operation == 'transcribe':
         for i in args[:-1]:
             result.append(rd.transcribe(i))
     if len(result) == 1:
@@ -61,8 +62,9 @@ def filter_fastq(seqs: dict, gc_bounds=(0, 100),
         dna = seqs[name][0]
         qual = seqs[name][1]
         gb = gc_bounds
-        if len(dna) >= length_bounds[0] and len(dna) <= length_bounds[1]:
-            if fq.gc_func(dna) >= gb[0] and fq.gc_func(dna) <= gb[1]:
-                if fq.quality_threshold_func(qual) > quality_threshold + 33:
-                    filter_result[name] = (dna, qual)
+        if (length_bounds[0] <= len(dna) <= length_bounds[1]:
+            and gb[0] <= fq.count_gc(dna) <= gb[1]:
+            and fq.quality_threshold(qual) > quality_threshold
+            ):
+            filter_result[name] = (dna, qual)
     return filter_result
