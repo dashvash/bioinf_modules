@@ -1,11 +1,11 @@
-def gc_func(string: str):
-    C = string.count('C')
-    G = string.count('G')
-    return (C + G)/len(string)*100
+def count_gc(seq: str):
+    c = seq.count('C')
+    g = seq.count('G')
+    return (c + g)/len(seq)*100
 
 
-def quality_threshold_func(qstring: str):
+def quality_threshold(qstring: str):
     total = 0
-    for i in qstring:
-        total += ord(i)
+    for q in qstring:
+        total += ord(q)
     return total/len(qstring)
