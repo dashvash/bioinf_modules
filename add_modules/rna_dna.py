@@ -1,3 +1,28 @@
+DNA_COMPLEMENT = {'A': 'T',
+                  'a': 't',
+                  'C': 'G',
+                  'c': 'g',
+                  'T': 'A',
+                  't': 'a',
+                  'G': 'C',
+                  'g': 'c'}
+RNA_COMPLEMENT = {'A': 'T',
+                  'a': 't',
+                  'C': 'G',
+                  'c': 'g',
+                  'U': 'A',
+                  'u': 'a',
+                  'G': 'C',
+                  'g': 'c'}
+DNA_TRANSCRIBE = {'A': 'A',
+                  'a': 'a',
+                  'C': 'C',
+                  'c': 'c',
+                  'T': 'U',
+                  't': 'u',
+                  'G': 'G',
+                  'g': 'g'}
+
 def is_dna(string: str) -> str:
     dna = {'a', 't', 'c', 'g'}
     return set(string.lower()).issubset(dna)
@@ -6,31 +31,6 @@ def is_dna(string: str) -> str:
 def is_rna(string: str) -> str:
     rna = {'a', 'u', 'c', 'g'}
     return set(string.lower()).issubset(rna)
-
-dna_complement = {'A': 'T',
-                  'a': 't',
-                  'C': 'G',
-                  'c': 'g',
-                  'T': 'A',
-                  't': 'a',
-                  'G': 'C',
-                  'g': 'c'}
-rna_complement = {'A': 'T',
-                  'a': 't',
-                  'C': 'G',
-                  'c': 'g',
-                  'U': 'A',
-                  'u': 'a',
-                  'G': 'C',
-                  'g': 'c'}
-dna_transcribe = {'A': 'A',
-                  'a': 'a',
-                  'C': 'C',
-                  'c': 'c',
-                  'T': 'U',
-                  't': 'u',
-                  'G': 'G',
-                  'g': 'g'}
 
 
 def reverse(string: str) -> str:
@@ -44,10 +44,10 @@ def complement(string: str) -> str:
     comp = ''
     if is_dna(string):
         for i in string:
-            comp += dna_complement[i]
+            comp += DNA_COMPLEMENT[i]
     if is_rna(string):
         for i in string:
-            comp += rna_complement[i]
+            comp += RNA_COMPLEMENT[i]
     if is_dna(string) is False and is_rna(string) is False:
         comp = 'is_not_NA'
     return comp
@@ -61,7 +61,7 @@ def transcribe(string: str) -> str:
     transcript = ''
     if is_dna(string):
         for i in string:
-            transcript += dna_transcribe[i]
+            transcript += DNA_TRANSCRIBE[i]
     if is_rna(string):
         transcript = 'it_is_RNA'
     if is_dna(string) is False and is_rna(string) is False:
