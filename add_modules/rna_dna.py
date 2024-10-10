@@ -23,6 +23,7 @@ DNA_TRANSCRIBE = {'A': 'A',
                   'G': 'G',
                   'g': 'g'}
 
+
 def is_dna(string: str) -> str:
     dna = {'a', 't', 'c', 'g'}
     return set(string.lower()).issubset(dna)
