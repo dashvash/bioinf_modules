@@ -8,4 +8,4 @@ def quality_threshold(qstring: str):
     total = 0
     for q in qstring:
         total += ord(q)
-    return total/len(qstring)
+    return total/len(qstring) - 33
