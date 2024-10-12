@@ -51,7 +51,8 @@ def filter_fastq(input_fastq, gc_bounds=(0, 100),
         or the upper limit if int/float
         quality_threshold(int, float): average read
         quality threshold for filtering
-        output_fastq: name for the output file created in /filtered/. Default name is filtered_file.
+        output_fastq: name for the output file
+        created in /filtered/. Default name is filtered_file.
     """
     full_path = os.path.abspath(__file__)
     path = os.path.dirname(full_path)
@@ -68,10 +69,7 @@ def filter_fastq(input_fastq, gc_bounds=(0, 100),
         qual = seqs[name][1]
         gb = gc_bounds
         if (length_bounds[0] <= len(dna) <= length_bounds[1]
-            and gb[0] <= fq.count_gc(dna) <= gb[1]
-            and fq.quality_threshold(qual) > quality_threshold
-            ):
+                and gb[0] <= fq.count_gc(dna) <= gb[1]
+                and fq.quality_threshold(qual) > quality_threshold):
             filter_result[name] = (dna, qual)
     return output_file.write(str(filter_result))
-
-
