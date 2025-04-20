@@ -1,0 +1,34 @@
+2025-04-20 12:14:32,352 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [0.0, 80.0], quality threshold 0
+2025-04-20 12:14:32,361 [INFO] Filtered 7 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 12:57:17,526 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [50.0, 100.0], quality threshold 0
+2025-04-20 12:57:17,531 [INFO] Filtered 12 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 12:57:25,862 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [50.0, 60.0], quality threshold 0
+2025-04-20 12:57:25,866 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 12:57:31,698 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [50.0, 70.0], quality threshold 0
+2025-04-20 12:57:31,702 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 12:57:35,745 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [50.0, 80.0], quality threshold 0
+2025-04-20 12:57:35,749 [INFO] Filtered 7 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 12:57:42,072 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [50.0, 75.0], quality threshold 0
+2025-04-20 12:57:42,076 [INFO] Filtered 2 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:08:27,414 [INFO] Starting filtering for example.fastq with GC bounds [50.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:08:27,419 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:08:32,877 [INFO] Starting filtering for example.fastq with GC bounds [45.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:08:32,882 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:08:37,335 [INFO] Starting filtering for example.fastq with GC bounds [10.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:08:37,339 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:08:40,523 [INFO] Starting filtering for example.fastq with GC bounds [60.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:08:40,527 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:09:06,580 [INFO] Starting filtering for example.fastq with GC bounds [90.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:09:06,584 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:09:14,086 [INFO] Starting filtering for example.fastq with GC bounds [0.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:09:14,090 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:09:26,251 [INFO] Starting filtering for example.fastq with GC bounds [0, 100], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:09:26,256 [INFO] Filtered 12 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:09:50,508 [INFO] Starting filtering for example.fastq with GC bounds [10.0, 50.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:09:50,512 [INFO] Filtered 8 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:09:57,805 [INFO] Starting filtering for example.fastq with GC bounds [10.0, 20.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:09:57,810 [INFO] Filtered 0 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:10:01,667 [INFO] Starting filtering for example.fastq with GC bounds [10.0, 40.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:10:01,671 [INFO] Filtered 5 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
+2025-04-20 13:10:57,363 [INFO] Starting filtering for example.fastq with GC bounds [10.0, 40.0], length bounds [0, 4294967296], quality threshold 0
+2025-04-20 13:10:57,367 [INFO] Filtered 5 reads saved to /Users/darialeino/Desktop/IB/HW18/bioinf_modules/filtered/filtered_file
