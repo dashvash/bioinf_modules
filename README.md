@@ -1,4 +1,6 @@
-# modules_new
+Код для этого ДЗ18 переехал в fastq_filtrator.py, в файле modules_new код с прошлых дз
+
+# fastq_filtrator.py
 Classes for processing biosequences and function filter_fastq
 
 ## Description
